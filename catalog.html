@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online shop</title>
+    <title>Catalog</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -41,44 +41,35 @@
     </header>
 
     <main class="page_content">
-        <section class="artwork">
-            <div class="container">
-                <div class="block_artwork">
-                    <div class="block_artwork_img"></div>
-                    <div class="block_artwork_title">
-                        <div class="position_text_artwork">
-                            <h2 class="style_text_the_brand">The brand</h2>
-                            <h3 class="style_text">of luxerious <span>fashion</span></h3>
-                        </div>
-                    </div>
-                </div>
+        <section class="color_catalog_block">
+            <div class="page_header_catalog_men">
+                <h3 class="position_style_catalog_title">New arrivals</h3>
+                <ul class="bread_crumbs">
+                    <li class="style_catalog_text"><a class="style_link_catalog" href="index.html">Home</a></li>
+                    <li class="style_catalog_text"><a class="style_link_catalog" href="#">Men</a></li>
+                    <li class="style_catalog_text">New arrivals</li>
+                </ul>
             </div>
         </section>
 
-        <section class="catalog">
-            <a class="catalog_item" href="">
-                <span class="catalog_item_title additional_style">30% off</span>
-                <span class="catalog_item_text additional_style">for women</span>
-            </a>
-            <a class="catalog_item" href="catalog.html">
-                <span class="catalog_item_title additional_style">hot deal</span>
-                <span class="catalog_item_text additional_style">for men</span>
-            </a>
-            <a class="catalog_item" href="">
-                <span class="catalog_item_title additional_style">new arrivals</span>
-                <span class="catalog_item_text additional_style">for kids</span>
-            </a>
-            <a class="catalog_item" href="">
-                <span class="catalog_item_title additional_style">luxirous &amp;&nbsp;trendy</span>
-                <span class="catalog_item_text additional_style">accesories</span>
-            </a>
-        </section>
-
         <section class="block_products">
-            <h3 class="title_under_the_picture">Fetured Items</h3>
-            <p class="text_under_the_picture">Shop for items based on what we featured in this week</p>
+            <div class="container_filter">
+                <ul class="content_filter">
+                    <li class="filter_title">Filter</li>
+                    <li><img class="position_filter_img" src="img/filter.svg" alt="Filter"></li>
+                </ul>
+                <ul class="content_filter position_content_filter">
+                    <li class="filter_title filter_text">Trending now</li>
+                    <li><img class="position_filter_img_arrow" src="img/arrow.svg" alt=""></li>
+                    <li class="filter_title filter_text">Size</li>
+                    <li><img class="position_filter_img_arrow" src="img/arrow.svg" alt=""></li>
+                    <li class="filter_title filter_text">Price</li>
+                    <li><img class="position_filter_img_arrow_price" src="img/arrow.svg" alt=""></li>
+                </ul>
+            </div>
+
             <ul class="products">
-                <li class="products_item position_product_center">
+                <li class="products_item position_product_left">
                     <img class="products_item_photo" src="img/product_men_one.png" alt="Product number one">
                     <div class="position_products_item_text">
                         <span class="products_item_title">Ellery x m'o capsule</span>
@@ -92,7 +83,7 @@
                     </button>
                 </li>
                 <li class="products_item position_product_center">
-                    <img class="products_item_photo" src="img/product_two.png" alt="Product number two">
+                    <img class="products_item_photo" src="img/product_men_two.png" alt="Product number two">
                     <div class="position_products_item_text">
                         <span class="products_item_title">Ellery x m'o capsule</span>
                         <p class="text_products">Known for her sculptural takes on traditional tailoring,
@@ -104,7 +95,7 @@
                         <span>Add to Cart</span>
                     </button>
                 </li>
-                <li class="products_item position_product_center">
+                <li class="products_item position_product_right">
                     <img class="products_item_photo" src="img/product_men_three.png" alt="Product number three">
                     <div class="position_products_item_text">
                         <span class="products_item_title">Ellery x m'o capsule</span>
@@ -117,7 +108,9 @@
                         <span>Add to Cart</span>
                     </button>
                 </li>
-                <li class="products_item position_product_center">
+            </ul>
+            <ul class="products">
+                <li class="products_item position_product_left">
                     <img class="products_item_photo" src="img/product_men_four.png" alt="Product number four">
                     <div class="position_products_item_text">
                         <span class="products_item_title">Ellery x m'o capsule</span>
@@ -131,7 +124,7 @@
                     </button>
                 </li>
                 <li class="products_item position_product_center">
-                    <img class="products_item_photo" src="img/product_five.png" alt="Product number five">
+                    <img class="products_item_photo" src="img/product_men_five.png" alt="Product number five">
                     <div class="position_products_item_text">
                         <span class="products_item_title">ellery x m'o capsule</span>
                         <p class="text_products">Known for her sculptural takes on traditional tailoring,
@@ -143,8 +136,8 @@
                         <span>Add to Cart</span>
                     </button>
                 </li>
-                <li class="products_item position_product_center">
-                    <img class="products_item_photo" src="img/product_six.png" alt="Product number six">
+                <li class="products_item position_product_right">
+                    <img class="products_item_photo" src="img/product_men_six.png" alt="Product number six">
                     <div class="position_products_item_text">
                         <span class="products_item_title">ellery x m'o capsule</span>
                         <p class="text_products">Known for her sculptural takes on traditional tailoring,
@@ -157,16 +150,66 @@
                     </button>
                 </li>
             </ul>
-            <div class="position_button">
-                <form action="#">
-                    <button class="products_button">Browse All Product</button>
-                </form>
+            <ul class="products">
+                <li class="products_item position_product_left">
+                    <img class="products_item_photo" src="img/product_men_seven.png" alt="Product number four">
+                    <div class="position_products_item_text">
+                        <span class="products_item_title">Ellery x m'o capsule</span>
+                        <p class="text_products">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="products_item_price">$52.00</span>
+                    </div>
+                    <button class="products_item_btn">
+                        <img class="position_basket_products" src="img/basket.svg" alt="" height="25" width="27">
+                        <span>Add to Cart</span>
+                    </button>
+                </li>
+                <li class="products_item position_product_center">
+                    <img class="products_item_photo" src="img/product_men_eight.png" alt="Product number five">
+                    <div class="position_products_item_text">
+                        <span class="products_item_title">ellery x m'o capsule</span>
+                        <p class="text_products">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="products_item_price">$52.00</span>
+                    </div>
+                    <button class="products_item_btn">
+                        <img class="position_basket_products" src="img/basket.svg" alt="" height="25" width="27">
+                        <span>Add to Cart</span>
+                    </button>
+                </li>
+                <li class="products_item position_product_right">
+                    <img class="products_item_photo" src="img/product_men_nine.png" alt="Product number six">
+                    <div class="position_products_item_text">
+                        <span class="products_item_title">ellery x m'o capsule</span>
+                        <p class="text_products">Known for her sculptural takes on traditional tailoring,
+                            Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <span class="products_item_price">$52.00</span>
+                    </div>
+                    <button class="products_item_btn">
+                        <img class="position_basket_products" src="img/basket.svg" alt="" height="25" width="27">
+                        <span>Add to Cart</span>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="numbering">
+                <div class="container_numbering">
+                    <a class="style_text_numbering" href="#"><img src="img/left_numbering.svg" alt=""></a>
+                    <a class="position_text_numbering style_text_numbering active" href="catalog.html">1</a>
+                    <a class="position_text_numbering style_text_numbering" href="#">2</a>
+                    <a class="position_text_numbering style_text_numbering" href="#">3</a>
+                    <a class="position_text_numbering style_text_numbering" href="#">4</a>
+                    <a class="position_text_numbering style_text_numbering" href="#">5</a>
+                    <a class="position_text_numbering style_text_numbering" href="#">6</a>
+                    <a class="style_text_numbering" href="#"><img class="position_img_numbering_right"
+                            src="img/right_numbering.svg" alt=""></a>
+                </div>
             </div>
         </section>
 
         <section class="color_advantages_block">
             <div class="advantages">
-                <div class="advantages_item position_advantages_item_left">
+                <div class="advantages_item">
                     <img class="advantages_item_img" src="img/car.svg" alt="" height="32" width="46">
                     <span class="advantages_item_title">Free Delivery</span>
                     <p class="advantages_item_text">Worldwide delivery on all. Authorit tively morph<br> next-generation
@@ -178,7 +221,7 @@
                     <p class="advantages_item_text">Worldwide delivery on all. Authorit tively morph<br> next-generation
                         innov tion with extensive models.</p>
                 </div>
-                <div class="advantages_item position_advantages_item_right">
+                <div class="advantages_item">
                     <img class="advantages_item_img" src="img/crown.svg" alt="" height="35" width="48">
                     <span class="advantages_item_title position_crown_title">Quality assurance</span>
                     <p class="advantages_item_text">Worldwide delivery on all. Authorit tively morph<br> next-generation
@@ -229,7 +272,4 @@
             </div>
         </section>
     </footer>
-
 </body>
-
-</html>
