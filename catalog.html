@@ -16,28 +16,26 @@
 
 <body>
     <header class="navigation">
-        <nav class="block_navigation">
-            <div class="conteiner">
-                <ul class="content_navigation">
-                    <li class="navigation_logo"><a href="index.html"><img src="img/logo.svg" alt="Logo"></a></li>
-                    <li>
-                        <form action="#" class="search_form">
-                            <input class="search_bar_style" id="search_btn" type="search">
-                            <label for="search_btn">
-                                <img class="navigation_search" src="img/search.svg" alt="" height="28" width="27">
-                            </label>
-                        </form>
-                    </li>
-                </ul>
-                <ul class="content_navigation">
-                    <li class="navigation_menu"><a href="#"><img src="img/menu.svg" alt="Menu"></a></li>
-                    <li class="navigation_user"><a href="#"><img src="img/user.svg" alt="User"></a></li>
-                    <li class="navigation_basket"><a href="#"><img src="img/basket.svg" alt=""></a>
+        <div class="block_navigation">
+            <div class="container">
+                <div class="content_navigation">
+                    <div class="navigation_logo"><a href="index.html"><img src="img/logo.svg" alt="Logo"></a></div>
+                    <form action="#" class="search_form">
+                        <input class="search_bar_style" id="search_btn" type="search">
+                        <label for="search_btn">
+                            <img class="navigation_search" src="img/search.svg" alt="" height="28" width="27">
+                        </label>
+                    </form>
+                </div>
+                <div class="content_navigation">
+                    <div class="navigation_menu"><a href="#"><img src="img/menu.svg" alt="Menu"></a></div>
+                    <div class="navigation_user"><a href="#"><img src="img/user.svg" alt="User"></a></div>
+                    <div class="navigation_basket"><a href="#"><img src="img/basket.svg" alt=""></a>
                         <span class="position_basket_quantity number_in_circle">5</span>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main class="page_content">
@@ -47,29 +45,34 @@
                 <ul class="bread_crumbs">
                     <li class="style_catalog_text"><a class="style_link_catalog" href="index.html">Home</a></li>
                     <li class="style_catalog_text"><a class="style_link_catalog" href="#">Men</a></li>
-                    <li class="style_catalog_text">New arrivals</li>
+                    <li class="style_catalog_text bold_text">New arrivals</li>
                 </ul>
             </div>
         </section>
 
         <section class="block_products">
             <div class="container_filter">
-                <ul class="content_filter">
-                    <li class="filter_title">Filter</li>
-                    <li><img class="position_filter_img" src="img/filter.svg" alt="Filter"></li>
-                </ul>
+                <div class="content_filter">
+                    <div class="filter_title filter_none">Filter</div>
+                    <div class="position_filter_img"></div>
+                </div>
                 <ul class="content_filter position_content_filter">
                     <li class="filter_title filter_text">Trending now</li>
-                    <li><img class="position_filter_img_arrow" src="img/arrow.svg" alt=""></li>
+                    <li>
+                        <div class="arrow position_filter_img_arrow"></div>
+                    </li>
                     <li class="filter_title filter_text">Size</li>
-                    <li><img class="position_filter_img_arrow" src="img/arrow.svg" alt=""></li>
+                    <li>
+                        <div class="arrow position_filter_img_arrow"></div>
+                    </li>
                     <li class="filter_title filter_text">Price</li>
-                    <li><img class="position_filter_img_arrow_price" src="img/arrow.svg" alt=""></li>
+                    <li>
+                        <div class="arrow position_filter_img_arrow"></div>
+                    </li>
                 </ul>
             </div>
-
             <ul class="products">
-                <li class="products_item position_product_left">
+                <li class="products_item position_product_center">
                     <img class="products_item_photo" src="img/product_men_one.png" alt="Product number one">
                     <div class="position_products_item_text">
                         <span class="products_item_title">Ellery x m'o capsule</span>
@@ -95,7 +98,7 @@
                         <span>Add to Cart</span>
                     </button>
                 </li>
-                <li class="products_item position_product_right">
+                <li class="products_item position_product_center">
                     <img class="products_item_photo" src="img/product_men_three.png" alt="Product number three">
                     <div class="position_products_item_text">
                         <span class="products_item_title">Ellery x m'o capsule</span>
@@ -108,9 +111,7 @@
                         <span>Add to Cart</span>
                     </button>
                 </li>
-            </ul>
-            <ul class="products">
-                <li class="products_item position_product_left">
+                <li class="products_item position_product_center">
                     <img class="products_item_photo" src="img/product_men_four.png" alt="Product number four">
                     <div class="position_products_item_text">
                         <span class="products_item_title">Ellery x m'o capsule</span>
@@ -136,7 +137,7 @@
                         <span>Add to Cart</span>
                     </button>
                 </li>
-                <li class="products_item position_product_right">
+                <li class="products_item position_product_center">
                     <img class="products_item_photo" src="img/product_men_six.png" alt="Product number six">
                     <div class="position_products_item_text">
                         <span class="products_item_title">ellery x m'o capsule</span>
@@ -149,9 +150,7 @@
                         <span>Add to Cart</span>
                     </button>
                 </li>
-            </ul>
-            <ul class="products">
-                <li class="products_item position_product_left">
+                <li class="products_item position_product_center">
                     <img class="products_item_photo" src="img/product_men_seven.png" alt="Product number four">
                     <div class="position_products_item_text">
                         <span class="products_item_title">Ellery x m'o capsule</span>
@@ -177,7 +176,7 @@
                         <span>Add to Cart</span>
                     </button>
                 </li>
-                <li class="products_item position_product_right">
+                <li class="products_item position_product_center">
                     <img class="products_item_photo" src="img/product_men_nine.png" alt="Product number six">
                     <div class="position_products_item_text">
                         <span class="products_item_title">ellery x m'o capsule</span>
@@ -191,7 +190,6 @@
                     </button>
                 </li>
             </ul>
-
             <div class="numbering">
                 <div class="container_numbering">
                     <a class="style_text_numbering" href="#"><img src="img/left_numbering.svg" alt=""></a>
@@ -209,7 +207,7 @@
 
         <section class="color_advantages_block">
             <div class="advantages">
-                <div class="advantages_item">
+                <div class="advantages_item position_advantages_item_left">
                     <img class="advantages_item_img" src="img/car.svg" alt="" height="32" width="46">
                     <span class="advantages_item_title">Free Delivery</span>
                     <p class="advantages_item_text">Worldwide delivery on all. Authorit tively morph<br> next-generation
@@ -221,7 +219,7 @@
                     <p class="advantages_item_text">Worldwide delivery on all. Authorit tively morph<br> next-generation
                         innov tion with extensive models.</p>
                 </div>
-                <div class="advantages_item">
+                <div class="advantages_item position_advantages_item_right">
                     <img class="advantages_item_img" src="img/crown.svg" alt="" height="35" width="48">
                     <span class="advantages_item_title position_crown_title">Quality assurance</span>
                     <p class="advantages_item_text">Worldwide delivery on all. Authorit tively morph<br> next-generation
@@ -231,7 +229,7 @@
         </section>
     </main>
 
-    <footer class="finish">
+    <footer class="content_footer">
         <section class="color_block_feedback">
             <div class="feedback">
                 <div class="feedback_comment">
@@ -272,4 +270,5 @@
             </div>
         </section>
     </footer>
+
 </body>
