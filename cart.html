@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navigation">
+        <div class="block_navigation">
+            <div class="container">
+                <div class="content_navigation">
+                    <div class="navigation_logo"><a href="index.html"><img src="img/logo.svg" alt="Logo"></a></div>
+                    <form action="#" class="search_form">
+                        <input class="search_bar_style" id="search_btn" type="search">
+                        <label for="search_btn">
+                            <img class="navigation_search" src="img/search.svg" alt="" height="28" width="27">
+                        </label>
+                    </form>
+                </div>
+                <div class="content_navigation">
+                    <div class="navigation_menu"><a href="#"><img src="img/menu.svg" alt="Menu"></a></div>
+                    <div class="navigation_user"><a href="#"><img src="img/user.svg" alt="User"></a></div>
+                    <div class="navigation_basket"><a href="cart.html"><img src="img/basket.svg" alt=""></a>
+                        <span class="position_basket_quantity number_in_circle">5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page_content">
+        <section class="color_catalog_block">
+            <div class="page_header_catalog_men">
+                <h3 class="position_style_catalog_title">Shopping cart</h3>
+            </div>
+        </section>
+
+        <section class="cart">
+            <div class="product_cart">
+                <div class="product_cart_flex">
+                    <a href="#" class="closing_page"></a>
+                    <div class="img_product_cart"></div>
+                    <div class="text_product_cart">
+                        <h3 class="product_descriptio_title">Mango people<br>t-shirt</h3>
+                        <div class="text_product_cart_flex">
+                            <p class="product_description indention">Price:</p>
+                            <p class="product_description"><span>$300</span></p>
+                        </div>
+                        <div class="text_product_cart_flex">
+                            <p class="product_description indention">Color:</p>
+                            <p class="product_description">Red</p>
+                        </div>
+                        <div class="text_product_cart_flex">
+                            <p class="product_description indention">Size:</p>
+                            <p class="product_description">XL</p>
+                        </div>
+                        <div class="text_product_cart_flex">
+                            <p class="product_description indention">Quantity: </p>
+                            <div class="decoration_product_description">
+                                <span class="product_description_number">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_cart_flex">
+                    <a href="#" class="closing_page"></a>
+                    <div class="img_product_cart img_other_product"></div>
+                    <div class="text_product_cart">
+                        <div class="text_product_cart">
+                            <h3 class="product_descriptio_title">Mango people<br>t-shirt</h3>
+                            <div class="text_product_cart_flex">
+                                <p class="product_description indention">Price:</p>
+                                <p class="product_description"><span>$300</span></p>
+                            </div>
+                            <div class="text_product_cart_flex">
+                                <p class="product_description indention">Color:</p>
+                                <p class="product_description">Red</p>
+                            </div>
+                            <div class="text_product_cart_flex">
+                                <p class="product_description indention">Size:</p>
+                                <p class="product_description">XL</p>
+                            </div>
+                            <div class="text_product_cart_flex">
+                                <p class="product_description indention">Quantity: </p>
+                                <div class="decoration_product_description">
+                                    <span class="product_description_number">2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_cart_flex">
+                    <button class="cart_button">
+                        <span class="text_cart_button">Clear shopping cart</span>
+                    </button>
+                    <button class="cart_button">
+                        <span class="text_cart_button">Continue shopping</span>
+                    </button>
+                </div>
+            </div>
+            <div class="shopping_adress_block">
+                <div class="shopping_adress">
+                    <h3 class="text_cart_checkout_result position_text_cart_checkout_result">Shipping adress</h3>
+                    <input class="style_input" type="text" placeholder="Bangladesh">
+                    <input class="style_input" type="text" placeholder="State">
+                    <input class="style_input" type="text" placeholder="Postcode / Zip">
+                    <button class="cart_button_shopping_adress text_cart_checkout_result style_text_cart_button">Get a quote</button>
+                </div>
+                <div class="checkout">
+                    <div class="text_cart_flex">
+                        <p class="text_cart_checkout">Sub total</p>
+                        <p class="text_cart_checkout">$900</p>
+                    </div>
+                    <div class="text_cart_flex">
+                        <p class="text_cart_checkout_result">Grand total</p>
+                        <p class="text_cart_checkout_result"><span>$900</span></p>
+                    </div>
+                    <div class="stripe_checkout"></div>
+                    <button class="cart_button_checkout">
+                        <span class="text_cart_button_checkout">Proceed to checkout</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="content_footer">
+        <section class="color_block_feedback">
+            <div class="feedback">
+                <div class="feedback_comment">
+                    <div class="feedback_avatar"></div>
+                    <p class="feedback_text">&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi,
+                        <span>a&nbsp;pulvinar purus condimentum&raquo;</span>
+                    </p>
+                </div>
+                <div class="feedback_subscribe">
+                    <span class="feedback_subscribe_title style_feedback_subscribe_title_text">subscribe</span>
+                    <span class="feedback_subscribe_text style_feedback_subscribe_title_text">for our newletter and
+                        promotion</span>
+                    <form action="#" class="subscribe_form">
+                        <input class="subscribe_form_email" type="email" placeholder="Enter Your Email" required>
+                        <input class="subscribe_form_button" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="color_block_black">
+            <div class="page_footer">
+                <p class="page_footer_text">&copy; 2021 Brand All Rights Reserved.</p>
+                <div class="page-footer-socials">
+                    <a href="#" class="page_footer_social_network">
+                        <img src="img/facebook.svg" alt="" height="16" width="11">
+                    </a>
+                    <a href="#" class="page_footer_social_network">
+                        <img src="img/instagram.svg" alt="" height="15" width="16">
+                    </a>
+                    <a href="#" class="page_footer_social_network">
+                        <img src="img/pinterest.svg" alt="" height="16" width="13">
+                    </a>
+                    <a href="#" class="page_footer_social_network">
+                        <img src="img/twitter.svg" alt="" height="14" width="17">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
