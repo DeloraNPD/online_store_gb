@@ -376,8 +376,9 @@ dl, ol, ul {
   
 .products_item_price {
     display: block;
-    font-size: 16px;
-    line-height: 19px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
     color: #F16D7F;
 }
   
@@ -494,6 +495,11 @@ dl, ol, ul {
 .advantages_item_img {
     display: block;
     margin: 0 auto;
+}
+
+.advantages_item_img:hover {
+    transform: rotate(360deg);
+    transition: 2s;
 }
   
 .advantages_item_title {
@@ -709,6 +715,7 @@ dl, ol, ul {
   
 .page_footer_social_network:hover {
     background-color: #F16D7F;
+    transform: perspective(200px) rotateY(45deg);
 }
 
 .page_footer_social_network:hover img {
@@ -919,11 +926,13 @@ dl, ol, ul {
     margin: 65px 0 0 0;
 }
 
-.decoration_block_product {
+.position_style_text_h3::before {
+    content: '';
+    display: block;
     position: absolute;
     width: 63px;
     height: 3px;
-    background: #EF5B70;
+    background-color: #EF5B70;
     top: 94px;
     left: 540px;
 }
@@ -944,24 +953,28 @@ dl, ol, ul {
     margin: 48px auto 0 auto;
 }
 
-.additional_style_products_item_pric {
+.additional_style_products_item_price {
     margin: 32px 0 0 0;
+}
+
+.additional_style_products_item_price::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 641px;
+    height: 1px;
+    background-color: #E2E2E2;
+    top: 357px;
+    left: 251px;
 }
 
 .products_button_block_product {
     padding: 0;
 }
 
-.stripe {
-    margin: 65px auto 0 auto;
-    width: 641px;
-    height: 1px;
-    background-color: #E2E2E2;
-}
-
 .position_content_filter_block_product {
     justify-content: center;
-    margin: 66px 0 0 0;
+    margin: 130px 0 0 0;
 }
 
 .img_my_background {
@@ -1006,42 +1019,32 @@ l, ul {
     display: flex;
     justify-content: space-between;
 }
-
-.closing_page {
-    display: block;
-}
-  
-.closing_page:before,
-.closing_page:after {
-    content: "";
-    display: block;
-    width: 18px;
-    height: 3px;
-    position: absolute;
-    top: 28px;
-    left: 612px;
-    background-color: #575757;
-    transition: 650ms ease;
-}
-
-.closing_page:before {
-    transform: rotate(-45deg);
-}
-  
-.closing_page:after {
-    transform: rotate(45deg);
-}
-  
-.closing_page:hover:after,
-.closing_page:hover:before {
-    background-color: #F16D7F;
-}
   
 .product_cart_flex {
     display: flex;
     box-shadow: 15px 15px 15px 2px #E5E5E5;
     margin: 0 0 40px 0;
     position: relative;
+}
+
+.button_cross {
+    position: absolute;
+    top: 28px;
+    left: 612px;
+}
+
+.button_cross svg {
+    fill: #575757;
+    transition: 1s;
+}
+
+.button_cross svg:hover {
+    fill: #F16D7F;
+    transform: scale(1.2);
+}
+
+.button_cross svg:active {
+    fill: #575757;
 }
 
 .product_cart_flex:nth-child(2) {
@@ -1442,6 +1445,12 @@ l, ul {
         margin: 25px 0 64px 0;
     }
 
+    .additional_style_products_item_price::before {
+        width: 175px;
+        top: 362px;
+        left: 100px;
+    }
+
     .bold_text {
         font-weight: 700;
     }
@@ -1450,12 +1459,12 @@ l, ul {
         top: 0;
     }
 
-    .decoration_block_product {
+    .position_style_text_h3::before {
         left: 352px;
     }
 
     .position_content_filter_block_product {
-        margin: 65px 0 0 0;
+        margin: 130px 0 0 0;
     }
 
     .cart {
@@ -1465,10 +1474,8 @@ l, ul {
         justify-content: center;
     }
 
-    .closing_page:before,
-    .closing_page:after {
-        top: 28px;
-        left: 692px;
+    .product_cart {
+        /* position: relative; */
     }
 
     .product_cart_flex {
@@ -1484,7 +1491,14 @@ l, ul {
         margin: 0;
     }
 
+    .button_cross {
+        position: absolute;
+        top: 28px;
+        left: 692px;
+    }
+
     .text_product_cart {
+        position: relative;
         width: 472px;
     }
 
@@ -1706,7 +1720,7 @@ l, ul {
         margin: 25px 0 65px 0;
     }
 
-    .decoration_block_product {
+    .position_style_text_h3::before {
         left: 155px;
     }
 
@@ -1725,17 +1739,16 @@ l, ul {
         line-height: 32px;
     }
 
-    .additional_style_products_item_pric {
+    .additional_style_products_item_price {
         margin: 0;
     }
 
-    .stripe {
-        margin: 32px auto 0 auto;
-        width: 175px;
+    .additional_style_products_item_price::before {
+        left: 64px;
     }
 
     .position_content_filter_block_product {
-        margin: 50px 0 0 0;
+        margin: 82px 0 0 0;
     }
 
     .position_products_button_block_product {
@@ -1767,10 +1780,10 @@ l, ul {
         justify-content: center;
     }
 
-    .closing_page:before,
-    .closing_page:after {
-    top: 17px;
-    left: 337px;
+    .button_cross {
+        position: absolute;
+        top: 17px;
+        left: 336px;
     }
 
     .img_product_cart {
