@@ -1254,6 +1254,216 @@ l, ul {
     color: #F16D7F;
 }
 
+.registration {
+    max-width: 1141px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.block_registration {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_data_entry {
+
+}
+
+.data_entry_name {
+
+}
+
+.input_block {
+    display: block;
+}
+
+
+.data_entry_name {
+    width: 360px;
+    height: 149px;
+    margin: 64px 0 0 0;
+}
+
+.data_entry_login {
+    margin: 33px 0 0 0;
+}
+
+.style_title_data_entry_name {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin: 0 0 21px 0;
+}
+
+.style_text_data_entry_name {
+    width: 359px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin: 15px 0 39px 0;
+}
+
+.form_checkbox_registration {
+    display: flex;
+    margin: 32px 0 0 0;
+}
+
+.form_checkbox {
+    border: 1px solid #A4A4A4;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.text_form_checkbox {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin: 0 20px 0 0;
+}
+
+.button_registration {
+    width: 167px;
+    height: 50px;
+    background-color: #F16D7F;
+    border: 1px solid #F16D7F;
+    box-sizing: border-box;
+    display: flex;
+    padding: 16px 0 17px 29px;
+}
+
+.style_text_button_registration {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.button_registration svg {
+    fill: #FFFFFF;
+    padding: 5px 0 0 20px;
+}
+
+.block_loyalty_program {
+    max-width: 652px;
+    height: 334px;
+    margin: 64px 0 0 0;
+}
+
+.style_text_loyalty_program {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.style_title_loyalty_program {
+    text-transform: uppercase;
+    margin: 0 0 22px 0;
+}
+
+.img_marker {
+    list-style-image: url(img/Vector.png);
+    list-style-position: inside;
+    margin: 0 0 16px 0;
+}
+
+.position_loyalty_program {
+    margin: 0 0 21px 0;
+}
+
+.position_block_registration {
+    margin: 96px 0 0 0;
+}
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked), 
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label, 
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    border-radius: 100%;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #F16D7F;
+    border-bottom: 4px solid #F16D7F;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #F16D7F;
+}
+
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
 
 @media (max-width: 1024px) {
     .block_navigation {
