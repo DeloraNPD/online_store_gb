@@ -1390,7 +1390,7 @@ l, ul {
 
 .block_loyalty_program {
     max-width: 652px;
-    height: 334px;
+    max-height: 334px;
     margin: 64px 0 0 0;
 }
 
@@ -1766,6 +1766,23 @@ input[type="radio"]:not(:checked) + label:after {
         margin: 65px 0 0 0;
     }
 
+    .block_data_entry {
+        margin-left: 17px;
+    }
+
+    .block_loyalty_program {
+        margin: 40px 16px 0 23px;
+    }
+
+    .data_entry_name {
+        margin: 40px 0 0 0;
+    }
+
+    .style_text_loyalty_program {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
 }
 
 @media (max-width: 667px) {
@@ -2109,6 +2126,28 @@ input[type="radio"]:not(:checked) + label:after {
 
     .checkout {
         margin: 49px auto 0 auto;
+    }
+
+    .block_registration {
+        display: block;
+    }
+
+    .block_data_entry {
+        margin-left: 9px;
+    }
+
+    .data_entry_name {
+        margin: 40px 0 0 0;
+    }
+
+    .block_loyalty_program {
+        margin: 40px 8px 0 9px;
+    }
+
+    .style_text_loyalty_program {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
     }
       
 }
